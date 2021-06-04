@@ -1,0 +1,35 @@
+doctype html
+html
+    head
+        title Harshit Dance Academy
+        style
+            include ../static/style2.css
+    
+    body
+        script
+            include script.js
+        nav#navbar
+            ul
+                div#logo
+                    img(src="/static/img/logo.png")
+                    | HDA
+                li #[a(href="/home") Home]
+                li #[a(href="/") About]
+                //- li #[a(href="/") Servics]
+                li #[a(href="/") Class Info]
+                li #[a(href="/contact") Contact Us]
+        h1 Contact Us
+        div.container
+            form(name="form" action= "/contact", method= "post", class= "myForm")
+                <input type="text"class= "myInput" name="name" placeholder="Enter your Name..">
+                <input type="phone" class= "myInput" name="phone" placeholder="Enter your Phone No..">
+                <input type="email" class= "myInput" name="email" placeholder="Enter your E-Mail..">
+                <input type="address" class="myInput" name="address" placeholder="Enter your Address">
+                <input type="desc1" class="myInput" name="desc1" placeholder="Enter your Concern">
+                //- button.btn onclick="submitForm()"
+                button(type="submit" value="submit" class='btn')
+                    | Submit
+
+
+        section#footer
+            p CopyRight &copy; 2021 HarshitDanceAcademy.com || All right reserved

@@ -1,0 +1,63 @@
+doctype html
+html
+    head
+        title Harshit Dance Academy
+        style
+            include ../static/style.css
+    
+    body
+        nav#navbar
+            ul
+                div#logo
+                    img(src="/static/img/logo.png")
+                    | HDA
+                li #[a(href="/home") Home]
+                li #[a(href="/") About]
+                li #[a(href="/") Servics]
+                //- li #[a(href="/") Class Info]
+                li #[a(href="/contact") Contact Us]
+
+        section#introSection
+            div Welcome to Harshit's dance academy
+            div.small Eat Sleep Dance Repeat
+
+        section#missionSection
+            h2 Our Mission
+            div.card
+                h3 Dance Perfection
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/1.png")
+                    div.card-content
+                        p This is the best dance academy of the universe
+
+            div.card
+                h3 Dance the way you like
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/2.png")
+                    div.card-content
+                        p Enjoy as much as you can
+
+            div.card
+                h3 Expert Teaching
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/3.png")
+                    div.card-content
+                        p Dance reduces your anxiety 
+
+        section#sponsorsSection
+            h2 Our Sponsors
+            div#sponsors
+                img(src="/static/img/logo1.png",alt="Sonsors Image",class="spImage")
+                img(src="/static/img/logo2.png",alt="Sonsors Image",class="spImage")
+                img(src="/static/img/logo3.png",alt="Sonsors Image",class="spImage")
+                img(src="/static/img/logo5.png",alt="Sonsors Image",class="spImage")
+                img(src="/static/img/logo4.png",alt="Sonsors Image",class="spImage")
+
+        section#footer
+            p CopyRight &copy; 2021 HarshitDanceAcademy.com || All right reserved
+
+        script
+            include ../static/index.js
